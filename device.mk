@@ -326,9 +326,7 @@ PRODUCT_COPY_FILES += \
 #  IPACM
 PRODUCT_PACKAGES += \
     ipacm \
-    IPACM_cfg.xml \
-    libipanat \
-    liboffloadhal
+    IPACM_cfg.xml
 
 # Keymaster
 PRODUCT_PACKAGES += \
@@ -430,7 +428,6 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.deprecated@1.0.vendor \
     libprotobuf-cpp-full \
     librmnetctl \
-    libxml2 \
     extphonelib \
     extphonelib.xml
 
