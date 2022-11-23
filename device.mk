@@ -134,7 +134,9 @@ PRODUCT_COPY_FILES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    vendor.semc.hardware.charger@1.0.vendor
+    vendor.semc.hardware.charger@1.0.vendor \
+    vendor.sony.charger \
+    vendor.sony.charger-service
 
 # Init
 PRODUCT_PACKAGES += \

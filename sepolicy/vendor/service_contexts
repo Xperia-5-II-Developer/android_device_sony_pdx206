@@ -1,2 +1,5 @@
 # NFC
 vendor.nxp.nxpnfc_aidl.INxpNfc/default                                        u:object_r:hal_nfc_service:s0
+
+# Sony Charger
+vendor.sony.charger.ICharger/default					      u:object_r:hal_sony_charger_service:s0
