@@ -385,6 +385,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGES += \
     CarrierConfigResTarget \
     FrameworksResTarget \
+    NfcResTarget \
     SettingsProviderResTarget \
     SettingsResTarget \
     SystemUIResTarget \
