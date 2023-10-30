@@ -98,8 +98,7 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/vintf/framework_compatibility_matrix.xml \
-    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+    hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml
 DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/vintf/compatibility_matrix.xml
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/vintf/manifest.xml
 
@@ -160,13 +159,6 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 0x06000000
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 0x06000000
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 109553106616 # Reserve space for data encryption (109553123000-16384)
-
-ifneq ($(WITH_GMS),true)
-BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_PRODUCTIMAGE_PARTITION_RESERVED_SIZE := 1258291200
-BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT := -1
-BOARD_SYSTEMIMAGE_PARTITION_RESERVED_SIZE := 1258291200
-endif
 
 BOARD_SOMC_DYNAMIC_PARTITIONS_PARTITION_LIST := odm product system system_ext vendor
 BOARD_SOMC_DYNAMIC_PARTITIONS_SIZE := 5901385728 # (Super partition size / 2) - 4MB

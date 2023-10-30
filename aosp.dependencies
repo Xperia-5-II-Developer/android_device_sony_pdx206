@@ -1,5 +1,9 @@
 [
   {
+    "repository": "android_vendor_sony_pdx206",
+    "target_path": "vendor/sony/pdx206"
+  },
+  {
     "repository": "android_kernel_sony_sm8250",
     "target_path": "kernel/sony/sm8250"
   }
